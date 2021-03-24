@@ -1,0 +1,68 @@
+<div class="main container" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <button class="check" (click)="check()">check</button> -->
+  <button class="logout button" (click)="logout()">logout</button>
+  <div class="column todo">
+      <h1> <b>Todo List</b>  </h1>
+      <div class="showListData" *ngFor="let item of TaskList ; index as i">
+        <b>{{item.title}}</b>
+        {{item.description}}
+
+        <button class="edit" (click)="edit(i)" [disabled]="displayForm" >edit <i class="fa fa-edit"></i></button>
+
+        <button class="clear" (click)="clear(i)" [disabled]="displayForm" >clear <i class="fa fa-trash"></i></button>
+      </div>
+  </div>
+
+
+  <div class="column tags">
+    <h1>Tags</h1>
+
+    <input class="createTag" [(ngModel)]="tagTitle" placeholder="enter tag" type="text" >
+    <button class="addTag" (click)="addTag()"> create tag</button>
+    <div class="TagListContainer">
+      <div class="showTags" *ngFor="let item of TagList;index as i">
+        <button class="showTagsList" (click)="showTagsList(i)">{{item.title}}</button>
+      </div>
+    </div>
+      <h1>Selected Tag List</h1>
+      <div class="showListDataParent">
+          <div class="showListData" *ngFor="let item of filterTaskList;index as i">
+          <b>{{item.title}}</b>
+            {{item.description}}
+          </div>
+      </div>
+  </div>
+
+
+  <div class="column form">
+    <button class="open-button" (click)="openForm()"  >Add Task</button>
+    <div #myform class="form-popup" id="myForm" *ngIf="displayForm" >
+      <form action="/action_page.php" class="form-container" >
+        <h1>Todo</h1>
+
+        <label for="task"><b>task</b></label>
+        <input  [(ngModel)]="task" (keyup)="formValidatiom()" type="text" placeholder="Enter task" name="task"   >
+
+        <label for="discription"><b>details</b></label>
+        <input [(ngModel)]="taskDiscription" type="text" placeholder="Enter details" name="discription" required >
+        <h2>added tag</h2>
+        <div class="TagListContainer">
+          <div class="showTodoTags" *ngFor="let item of showTodoTagList;index as i">
+            <button class="deleteTagInTodo" (click)="deleteTagInTodo(i)">{{item}}</button>
+          </div>
+        </div>
+        <h2>add tags</h2>
+        <div class="TagListContainer">
+          <div class="showTags" *ngFor="let item of TagList;index as i">
+            <button class="addTagInTodo" (click)="addTagInTodo(i)">{{item.title}}</button>
+          </div>
+        </div>
+        <button (click)="update()" *ngIf="displayUpdate"  class="update" >update</button>
+        <button  (click)="add()"  [disabled]="invalidForm" *ngIf="displaySave"   class="btn" >save</button>
+        <button type="button" class="btn cancel" (click)="closeForm()">Close</button>
+
+      </form>
+    </div>
+  </div>
+ </div>

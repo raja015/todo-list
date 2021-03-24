@@ -1,0 +1,38 @@
+.loginSubmit{
+
+  padding: 8px;
+  margin: 8px;
+  top: 10%;
+  left: 45%;
+  border-radius: 5px;
+  background-color: #76efe1;
+  position: relative;
+  padding-right: 80px;
+}
+
+.username{
+  position: relative;
+  margin: 10px;
+  left: 40%;
+  padding: 10px;
+  padding-right: 80px;
+  top: 10%;
+  border-radius: 5px;
+}
+.password
+{    position: relative;
+
+  margin: 10px;
+  left: 40%;
+  padding: 10px;
+  padding-right: 80px;
+  top: 50px;
+  border-radius: 5px;
+}
+
+.login{
+text-align: center;
+  top: 10%;
+  position: relative;
+
+}
