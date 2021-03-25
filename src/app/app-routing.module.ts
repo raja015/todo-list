@@ -4,11 +4,12 @@ import {LoginComponent} from './login/login.component';
 import { TodoComponent} from './todo/todo.component';
 import {AuthorizeGuardService as authGuard} from './authorize-guard.service';
 
+
 const routes: Routes = [
+
   {
     path:'login',
-    component:LoginComponent,
-    canActivateChild:[authGuard]
+    component:LoginComponent
   },
   {
     path:'homepage',
