@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-const baseUrl = 'https://todo-list-backend015.herokuapp.com/api/auth';
+const baseUrl = 'http://localhost:8000/api/auth';
 
 
 @Injectable({

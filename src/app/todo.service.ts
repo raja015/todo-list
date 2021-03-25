@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-const baseUrl = 'https://todo-list-backend015.herokuapp.com/api/todos';
-const tagUrl = 'https://todo-list-backend015.herokuapp.com/api/tags';
+const baseUrl = 'http://localhost:8000/api/todos';
+const tagUrl = 'http://localhost:8000/api/tags';
 
 
 
