@@ -8,12 +8,12 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private router:Router){}
-  title ='my todos';
-  displayLogin:boolean=true;
-  redirectToLoginPage(){
-    this.displayLogin=false;
-    this.router.navigate(['/login']);
+  // constructor(private router:Router){}
+  // title ='my todos';
+  // displayLogin:boolean=true;
+  // redirectToLoginPage(){
+  //   this.displayLogin=false;
+  //   this.router.navigate(['/login']);
 
-  }
+  // }
 }

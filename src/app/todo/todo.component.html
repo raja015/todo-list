@@ -7,17 +7,13 @@
       <div class="showListData" *ngFor="let item of TaskList ; index as i">
         <b>{{item.title}}</b>
         {{item.description}}
-
         <button class="edit" (click)="edit(i)" [disabled]="displayForm" >edit <i class="fa fa-edit"></i></button>
-
         <button class="clear" (click)="clear(i)" [disabled]="displayForm" >clear <i class="fa fa-trash"></i></button>
       </div>
   </div>
 
-
   <div class="column tags">
     <h1>Tags</h1>
-
     <input class="createTag" [(ngModel)]="tagTitle" placeholder="enter tag" type="text" >
     <button class="addTag" (click)="addTag()"> create tag</button>
     <div class="TagListContainer">

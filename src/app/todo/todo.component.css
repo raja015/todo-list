@@ -33,10 +33,7 @@ overflow: auto;
   border-radius: 8px;
   background-color: #6dd1f8;
 }
-.logout:active,.edit:active,.clear:active,.addTag:active{
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
+
 .logout{
   float: right;
   background-color: #f4371e;
@@ -47,13 +44,13 @@ overflow: auto;
   font-size: 16px;
   margin: 4px 2px;
   opacity: 0.6;
-  transition: 0.3s;
+
   display: block;
   text-decoration: none;
   cursor: pointer;
 }
 .logout:hover,.edit:hover,.clear:hover{
-  opacity: 150%;
+  opacity: 1.5;
 }
 .list{
   width: 100px;
@@ -172,7 +169,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 
 .column {
   float: left;
-  width: 33.33%;
+  width: 470px;
   padding: 10px;
   max-height: fit-content;
   overflow: auto;
@@ -181,7 +178,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 /* Clear floats after the columns */
 
 .tags{
-  background-color: #4CAF50;
+  background-color: antiquewhite;
 }
 .row:after {
   content: "";

@@ -1,38 +1,37 @@
 .loginSubmit{
-
   padding: 8px;
-  margin: 8px;
-  top: 10%;
-  left: 45%;
-  border-radius: 5px;
-  background-color: #76efe1;
-  position: relative;
-  padding-right: 80px;
+    margin: 8px;
+    top: 30%;
+    left: 45%;
+    border-radius: 5px;
+    background-color: #76efe1;
+    position: absolute;
+    padding-right: 80px;
 }
 
 .username{
-  position: relative;
+  position: absolute;
   margin: 10px;
-  left: 40%;
+  left: 37%;
   padding: 10px;
   padding-right: 80px;
-  top: 10%;
+  top: 14%;
   border-radius: 5px;
 }
-.password
-{    position: relative;
-
+.password{
+  position: absolute;
   margin: 10px;
-  left: 40%;
+  left: 37%;
   padding: 10px;
   padding-right: 80px;
-  top: 50px;
+  top: 22%;
   border-radius: 5px;
 }
 
 .login{
-text-align: center;
+  text-align: center;
+  left: 48%;
   top: 10%;
-  position: relative;
+  position: absolute;
 
 }
